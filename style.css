@@ -1,1 +1,86 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container da Tabela */
+.container-tabela {
+    width: 100%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilização da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #4f46e5;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Alinhamento específico de colunas */
+td:nth-child(1), th:nth-child(1),
+td:nth-child(3), th:nth-child(3),
+td:nth-child(4), th:nth-child(4) {
+    text-align: center;
+}
+
+/* Tags de Status (Presença) */
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.presente {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.ausente {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
 
